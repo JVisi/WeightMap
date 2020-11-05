@@ -1,0 +1,23 @@
+{
+  "name": "weight_map",
+  "version": "0.0.1",
+  "description": "weight map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JVisi/WeightMap.git"
+  },
+  "author": "Visi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JVisi/WeightMap/issues"
+  },
+  "homepage": "https://github.com/JVisi/WeightMap#readme",
+  "dependencies": {
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
