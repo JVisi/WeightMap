@@ -1,6 +1,3 @@
-const {seq,testConnection} =require('./lib/database/connector');
-const {Users,Weights}=require('./lib/database/enitites')
-testConnection();
-Weights.findAll({include:Users}).then((result)=>{
-    console.log(result[0]);
-})
+const queries=require('./lib/database/functions');
+
+queries.selectUserById('d2713cb3-e2dc-4586-9a15-9c0051473a38');
