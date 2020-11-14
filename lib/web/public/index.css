@@ -1,5 +1,15 @@
+
+#wrapper{
+    display: flex;
+}
 form{
-    border: 2px solid black;
-    border-radius: 1%;
-    padding: 1vw;
+    border: 2px solid gray;
+    border-radius: 5%;
+    width: 33%;
+    margin: auto;
+    padding: 2vw;
+    box-shadow:inset -1px -1px 15px grey;
+}
+#registerForm{
+    margin-top: 2vw;
 }

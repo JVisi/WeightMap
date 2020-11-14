@@ -16,8 +16,9 @@
     
 </head>
 <body>
-    <div>
+    <div id="wrapper" class="container">
         <form id="loginForm">
+            <legend>Login</legend>
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" class="form-control" id="username" placeholder="Username">
@@ -26,11 +27,10 @@
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password">
             </div>
-            <button class="btn btn-outline-dark" type="button" onclick="sendLogin()">Login</button><br>
-        </form>
-    </div>
-    <div>    
+            <button class="btn btn-outline-dark" type="button" id="logBtn" onclick="sendLogin()">Login</button><br>
+        </form>    
         <form id="registerForm">
+            <legend>Register</legend>
             <div class="form-group">
                 <label for="regUser">Username</label>
                 <input type="text" class="form-control" id="regUser" placeholder="Choose your username">
@@ -43,8 +43,14 @@
                 <label for="regPass2">Password again</label>
                 <input type="password" class="form-control" id="regPass2" placeholder="Type your password again">
             </div>
-            <button class="btn btn-outline-dark" type="button" onclick="sendRegister()">Login</button><br>
+            <button class="btn btn-outline-dark" type="button" id="regBtn" onclick="sendRegister()">Register</button><br>
         </form>
+    </div>
+    <div class="container">
+        <div>
+            <h1 class="display-1">Weight Map</h1><br>
+            <h3 class="text-muted">By JVisi</h3>
+        </div>
     </div>
 </body>
 
