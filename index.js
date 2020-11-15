@@ -3,10 +3,11 @@ const express=require('express');
 const path=require("path");
 const bodyp=require('body-parser');
 const {router}=require('./lib/routing');
+const functions = require('./lib/database/functions');
 
 const app=express();
 const port=process.env.PORT || 3000;
-
+console.log(functions.encrypt("alma"));
 app.use(express.static(path.join(__dirname,'lib/web/public/')));
 app.use(bodyp.urlencoded({extended:true}));
 app.use(bodyp.json());
