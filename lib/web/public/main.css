@@ -1,8 +1,55 @@
 
 form{
-    border: 2px solid gray;
+    border: 2px solid black;
     border-radius: 5%;
-    margin: auto;
     padding: 2vw;
     box-shadow:inset -1px -1px 15px grey;
+    width: 50%;
+    margin: auto;
 }
+#addWeight{
+    margin-top: 1vw;
+}
+.container-fluid{
+    margin-top: 2vw;
+  width:100%;
+  height:auto;
+  display: flex;
+}
+.weightForm{
+    width: 100%;
+    min-width: 30%;
+    margin: auto;
+}
+.weightTable{
+    width: 50%;
+    min-width: 30%;
+    max-height: 30vw;
+    overflow-y: scroll;
+}
+.user{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.chart{
+    width: 100%;
+    max-height: 30vw;
+    border:0.5px solid lightgray;
+}
+#ctx{
+    max-height: 30vw;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+@media screen and (max-width:960px) {
+    .weightTable, .chart, .container-fluid{
+      width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}@media screen and (max-width: 960px){
+    .container-fluid, .chart,.weightForm{
+        flex-direction: column;
+    }
+  }
