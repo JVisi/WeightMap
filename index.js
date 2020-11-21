@@ -14,9 +14,9 @@ app.use(session({
         return generateId() // use UUIDs for session IDs
       },
     secret: 'keyboard cat',
+    unset:"keep",
     resave: false,
-    saveUninitialized: true,
-    cookie  : { secure:false,maxAge  : new Date(Date.now() + (600000)) } //10 minutes
+    saveUninitialized: true //10 minutes
   }));
 app.use(express.static(path.join(__dirname,'lib/web/public/')));
 app.use(bodyp.urlencoded({extended:true}));
