@@ -24,7 +24,7 @@ form{
 .weightTable{
     width: 50%;
     min-width: 30%;
-    max-height: 30vw;
+    max-height: 30em;
     overflow-y: scroll;
 }
 .user{
@@ -34,11 +34,11 @@ form{
 }
 .chart{
     width: 100%;
-    max-height: 30vw;
+    max-height: 30em;
     border:0.5px solid lightgray;
 }
 #ctx{
-    max-height: 30vw;
+    max-height: 30em;
 }
 ::-webkit-scrollbar {
     width: 0px;
